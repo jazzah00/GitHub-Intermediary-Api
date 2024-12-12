@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GitHub-Intermediary-Api.props" />
+</Project>
