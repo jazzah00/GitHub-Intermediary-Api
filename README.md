@@ -1,5 +1,5 @@
 # GitHub-Intermediary-Api
-
+An intermediary Api that be used to query GitHub's public API to retrieve a user. This api requires an authentication token that can be generated for single-use - this is a stand-in for those that want to implement their own forms of authentication.
 
 This Api is built with swagger for easier usage.
 
