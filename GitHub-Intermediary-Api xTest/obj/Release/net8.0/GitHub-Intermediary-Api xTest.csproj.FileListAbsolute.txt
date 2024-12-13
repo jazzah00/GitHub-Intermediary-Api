@@ -1,0 +1,113 @@
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\.msCoverageSourceRootsMapping_GitHub-Intermediary-Api xTest
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\CoverletSourceRootsMapping_GitHub-Intermediary-Api xTest
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\testhost.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.deps.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.runtimeconfig.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\appsettings.Development.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\appsettings.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.staticwebassets.endpoints.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.exe
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\testhost.exe
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.runner.visualstudio.testadapter.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.runner.utility.netcoreapp10.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api xTest.deps.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api xTest.runtimeconfig.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api xTest.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api xTest.pdb
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.OpenApi.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Newtonsoft.Json.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.abstractions.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.assert.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.core.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\xunit.execution.dotnet.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\bin\Release\net8.0\GitHub-Intermediary-Api.pdb
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.csproj.AssemblyReference.cache
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.AssemblyInfoInputs.cache
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.AssemblyInfo.cs
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.csproj.CoreCompileInputs.cache
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.sourcelink.json
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-I.B7DB0E85.Up2Date
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\refint\GitHub-Intermediary-Api xTest.dll
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.pdb
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\GitHub-Intermediary-Api xTest.genruntimeconfig.cache
+D:\Development\_Technical Assessments\GitHub-Intermediary-Api\GitHub-Intermediary-Api xTest\obj\Release\net8.0\ref\GitHub-Intermediary-Api xTest.dll

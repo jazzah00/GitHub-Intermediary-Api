@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GitHub-Intermediary-Api.props" />
+</Project>
