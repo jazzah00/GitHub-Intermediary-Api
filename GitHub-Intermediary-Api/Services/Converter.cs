@@ -1,8 +1,9 @@
-﻿using System.Reflection;
+﻿using GitHub_Intermediary_Api.Interfaces;
+using System.Reflection;
 using System.Xml.Linq;
 
-namespace GitHub_Intermediary_Api.Framework {
-    public class Converter() {
+namespace GitHub_Intermediary_Api.Services {
+    public class Converter : IConverter {
         public string ConvertToXml(object obj, string rootName) {
             XElement root = new(rootName);
             ParseObjectToXml(obj, root);
@@ -14,8 +15,8 @@ namespace GitHub_Intermediary_Api.Framework {
 
             PropertyInfo[] properties = obj.GetType().GetProperties();
             foreach (PropertyInfo property in properties) {
-                object value = property.GetValue(obj);
-                if (value is IEnumerable<object> list && !(value is string)) {
+                object? value = property.GetValue(obj);
+                if (value is IEnumerable<object> list && value is not string) {
                     XElement listElement = new(property.Name);
                     foreach (object item in list) {
                         XElement listItemElement = new(property.Name.TrimEnd('s'));

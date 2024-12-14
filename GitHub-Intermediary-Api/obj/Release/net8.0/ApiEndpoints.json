@@ -1,28 +1,18 @@
 [
   {
-    "ContainingType": "GitHub_Intermediary_Api.Controllers.GitHubController",
-    "Method": "GenerateAccessToken",
-    "RelativePath": "GitHub/GenerateAccessToken",
+    "ContainingType": "GitHub_Intermediary_Api.Controllers.AuthController",
+    "Method": "GenerateToken",
+    "RelativePath": "Auth/GenerateToken",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GitHub_Intermediary_Api.Controllers.GitHubController",
     "Method": "RetrieveUsersJson",
-    "RelativePath": "GitHub/RetrieveUsers",
+    "RelativePath": "GitHub/RetrieveUsersJson",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -31,24 +21,9 @@
         "Name": "usernames",
         "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
-      },
-      {
-        "Name": "accessToken",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "GitHub_Intermediary_Api.Controllers.GitHubController",
@@ -62,23 +37,18 @@
         "Name": "usernames",
         "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
-      },
-      {
-        "Name": "accessToken",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GitHub_Intermediary_Api.Controllers.GitHubController",
+    "Method": "TestAuth",
+    "RelativePath": "GitHub/TestAuth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

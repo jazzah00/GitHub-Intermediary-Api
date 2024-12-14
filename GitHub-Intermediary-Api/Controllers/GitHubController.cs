@@ -1,55 +1,36 @@
-using GitHub_Intermediary_Api.Framework;
+using GitHub_Intermediary_Api.Interfaces;
 using GitHub_Intermediary_Api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace GitHub_Intermediary_Api.Controllers {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class GitHubController : ControllerBase {
-        private static Dictionary<string, DateTime> AuthenticationTokens = [];
+        private readonly IGitHubService _GitHubService;
+        private readonly IConverter _Converter;
 
-        [HttpGet("GenerateAccessToken")]
-        public string GenerateAccessToken() {
-            Generator generator = new();
-            string accessToken = generator.GenerateRandomAccessToken();
-            while (AuthenticationTokens.ContainsKey(accessToken)) accessToken = generator.GenerateRandomAccessToken();
-            AuthenticationTokens.Add(accessToken, DateTime.UtcNow);
-            return accessToken;
+        public GitHubController(IGitHubService gitHubService, IConverter converter) {
+            _GitHubService = gitHubService;
+            _Converter = converter;
         }
-        
-        [HttpGet("RetrieveUsers")]
-        public string RetrieveUsersJson([FromQuery] List<string> usernames, [FromQuery] string accessToken) {
-            if (new Validator().ValidateAuthenticationToken(ref AuthenticationTokens, accessToken)) {
-                ApiUserResponse apiUserResponse = RetrieveUsers(usernames);
-                return JsonConvert.SerializeObject(apiUserResponse);
-            }
-            return "Invalid Access Token";
+
+        [HttpGet("RetrieveUsersJson")]
+        public async Task<IActionResult> RetrieveUsersJson([FromQuery] List<string> usernames) {
+            ApiUserResponse apiUserResponse = await _GitHubService.RetrieveUsersAsync(usernames);
+            return Ok(JsonConvert.SerializeObject(apiUserResponse));
         }
 
         [HttpGet("RetrieveUsersXml")]
-        public string RetrieveUsersXml([FromQuery] List<string> usernames, [FromQuery] string accessToken) {
-            if (new Validator().ValidateAuthenticationToken(ref AuthenticationTokens, accessToken)) {
-                ApiUserResponse apiUserResponse = RetrieveUsers(usernames);
-                string xmlString = new Converter().ConvertToXml(apiUserResponse, "ApiUserResponse");
-                return xmlString;
-            }
-            return "Invalid Access Token";
+        public async Task<IActionResult> RetrieveUsersXml([FromQuery] List<string> usernames) {
+            ApiUserResponse apiUserResponse = await _GitHubService.RetrieveUsersAsync(usernames);
+            string xmlString = _Converter.ConvertToXml(apiUserResponse, "ApiUserResponse");
+            return Ok(xmlString);
         }
 
-        private static ApiUserResponse RetrieveUsers(List<string> usernames) {
-            usernames = new Validator().ValidateUsernames(usernames, out Dictionary<string, string> errors);
-            List<User> users = [];
-            foreach (string username in usernames) {
-                User? user = new ApiConnector().RetrieveUsersAsync(username).Result;
-                if (user != null) users.Add(user);
-                else errors.Add(username, "User not found.");
-            }
-            ApiUserResponse apiUserResponse = new() {
-                Users = [.. users.OrderBy(u => u.Name)],
-                Errors = errors.Select(e => new Error { Username = e.Key, Message = e.Value }).ToList()
-            };
-            return apiUserResponse;
-        }
+        [HttpGet("TestAuth")]
+        public IActionResult TestAuth() => Ok("Token is Valid and request authorized.");
     }
 }

@@ -1,8 +1,9 @@
-﻿using GitHub_Intermediary_Api.Models;
+﻿using GitHub_Intermediary_Api.Interfaces;
+using GitHub_Intermediary_Api.Models;
 using Newtonsoft.Json;
 
-namespace GitHub_Intermediary_Api.Framework {
-    public class ApiConnector() {
+namespace GitHub_Intermediary_Api.Services {
+    public class ApiConnector : IApiConnector {
         private readonly Dictionary<string, string> GitHubHeaders = new() {
             { "Accept", "application/vnd.github+json" },
             { "X-GitHub-Api-Version", "2022-11-28" },

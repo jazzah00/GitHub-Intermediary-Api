@@ -1,110 +1,104 @@
 using GitHub_Intermediary_Api.Controllers;
+using GitHub_Intermediary_Api.Interfaces;
 using GitHub_Intermediary_Api.Models;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
 using Newtonsoft.Json;
 using System.Xml.Serialization;
 
 namespace GitHub_Intermediary_Api_xTest {
     public class GitHubControllerTest {
+        private readonly Mock<IGitHubService> _MockGitHubService;
+        private readonly Mock<IConverter> _MockConverter;
+        private readonly GitHubController _GitHubController;
 
-        [Fact]
-        public void RetrieveUsers_AccessToken_Invalid() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah00", "Octacat"];
-
-            string result = gitHubController.RetrieveUsersXml(usernames, "abc123");
-            Assert.NotEmpty(result);
-            Assert.Equal("Invalid Access Token", result);
+        public GitHubControllerTest() {
+            _MockGitHubService = new Mock<IGitHubService>();
+            _MockConverter = new Mock<IConverter>();
+            _GitHubController = new GitHubController(_MockGitHubService.Object, _MockConverter.Object);
         }
 
         [Fact]
-        public void RetrieveUsers_AccessToken_Timeout() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah00", "Octacat"];
+        public async Task RetrieveUsersJson_ReturnsOkResult_WithSerializedJson() {
+            List<string> usernames = ["arrow", "spartan"];
+            ApiUserResponse apiUserResponse = new() {
+                Users = [
+                    new User {
+                        Name = "John Diggle",
+                        Login = "spartan",
+                        Company = "US Army",
+                        Followers = 170,
+                        Public_Repos = 8 },
+                    new User {
+                        Name = "Oliver Queen",
+                        Login = "arrow",
+                        Company = "Queen Industries",
+                        Followers = 170,
+                        Public_Repos = 8
+                    },
+                    new User {
+                        Name = "Felicity Smoak",
+                        Login = "Overwatch",
+                        Company = "",
+                        Followers = 160,
+                        Public_Repos = 8
+                    }
+                ],
+                Errors = []
+            };
+            string jsonString = JsonConvert.SerializeObject(apiUserResponse);
+            _MockGitHubService.Setup(gh => gh.RetrieveUsersAsync(usernames)).ReturnsAsync(apiUserResponse);
 
-            string result = gitHubController.GenerateAccessToken();
-            Assert.NotEmpty(result);
-            Thread.Sleep(70 * 1000);
+            IActionResult? result = await _GitHubController.RetrieveUsersJson(usernames);
 
-            result = gitHubController.RetrieveUsersXml(usernames, result);
-            Assert.NotEmpty(result);
-            Assert.Equal("Invalid Access Token", result);
+            OkObjectResult okObjectResult = Assert.IsType<OkObjectResult>(result);
+            Assert.Equal(jsonString, okObjectResult.Value);
         }
 
         [Fact]
-        public void RetrieveUsers_Valid_Xml() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah00", "Octacat"];
+        public async Task RetrieveUsersJson_ReturnsOkResult_WithSerializedXml() {
+            List<string> usernames = ["arrow", "spartan"];
+            ApiUserResponse apiUserResponse = new() {
+                Users = [
+                    new User {
+                        Name = "Felicity Smoak",
+                        Login = "Overwatch",
+                        Company = "",
+                        Followers = 160,
+                        Public_Repos = 8
+                    },
+                    new User {
+                        Name = "John Diggle",
+                        Login = "Spartan",
+                        Company = "US Army",
+                        Followers = 170,
+                        Public_Repos = 8 },
+                    new User {
+                        Name = "Oliver Queen",
+                        Login = "Arrow",
+                        Company = "Queen Industries",
+                        Followers = 170,
+                        Public_Repos = 8
+                    }
+                ],
+                Errors = []
+            };
+            string xmlResponse = "<ApiUserResponse><Users><User><Name>Felicity Smoak</Name><Login>Overwatch</Login><Company></Company><Followers>160</Followers><Public_Repos>8</Public_Repos><Average_Followers_Per_Repository>20</Average_Followers_Per_Repository></User><User><Name>John Diggle</Name><Login>Spartan</Login><Company>US Army</Company><Followers>170</Followers><Public_Repos>8</Public_Repos><Average_Followers_Per_Repository>23</Average_Followers_Per_Repository></User><User><Name>Oliver Queen</Name><Login>Arrow</Login><Company>Queen Industries</Company><Followers>170</Followers><Public_Repos>8</Public_Repos><Average_Followers_Per_Repository>23</Average_Followers_Per_Repository></User></Users><Errors></Errors></ApiUserResponse>";
+            _MockGitHubService.Setup(gh => gh.RetrieveUsersAsync(usernames)).ReturnsAsync(apiUserResponse);
+            _MockConverter.Setup(c => c.ConvertToXml(apiUserResponse, "ApiUserResponse")).Returns(xmlResponse);
 
-            string result = gitHubController.GenerateAccessToken();
-            Assert.NotEmpty(result);
-            result = gitHubController.RetrieveUsersXml(usernames, result);
-            Assert.NotNull(result);
+            IActionResult? result = await _GitHubController.RetrieveUsersXml(usernames);
 
-            if (!string.IsNullOrEmpty(result)) {
-                using (StringReader reader = new(result)) {
-                    XmlSerializer xmlSerializer = new(typeof(ApiUserResponse));
-                    ApiUserResponse response = (ApiUserResponse)xmlSerializer.Deserialize(reader);
-
-                    Assert.NotNull(response);
-                    Assert.Equal(2, response.Users.Count);
-                }
-            }
+            OkObjectResult okObjectResult = Assert.IsType<OkObjectResult>(result);
+            Assert.Equal(xmlResponse, okObjectResult.Value);
         }
 
         [Fact]
-        public void RetrieveUsers_Valid_Json() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah00", "Octacat"];
+        public void TestAuth_ReturnsOkResult_WithMessage() {
+            IActionResult? result = _GitHubController.TestAuth();
 
-            string result = gitHubController.GenerateAccessToken();
-            Assert.NotEmpty(result);
-            result = gitHubController.RetrieveUsersJson(usernames, result);
-            Assert.NotNull(result);
-
-            if (!string.IsNullOrEmpty(result)) {
-                ApiUserResponse response = JsonConvert.DeserializeObject<ApiUserResponse>(result);
-                Assert.NotNull(response);
-                Assert.Equal(2, response.Users.Count);
-            }
-        }
-
-        [Fact]
-        public void RetrieveUsers_Valid_With_Duplicate() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah00", "Jazzah00", "Octadog"];
-
-            string result = gitHubController.GenerateAccessToken();
-            Assert.NotEmpty(result);
-            result = gitHubController.RetrieveUsersJson(usernames, result);
-            Assert.NotNull(result);
-
-            if (!string.IsNullOrEmpty(result)) {
-                ApiUserResponse response = JsonConvert.DeserializeObject<ApiUserResponse>(result);
-                Assert.NotNull(response);
-                Assert.Equal(2, response.Users.Count);
-                Assert.Single(response.Errors);
-            }
-        }
-
-        [Fact]
-        public void RetrieveUsers_Empty_With_Errors() {
-            GitHubController gitHubController = new();
-            List<string> usernames = ["Jazzah 00", "petepenguin"];
-
-            string result = gitHubController.GenerateAccessToken();
-            Assert.NotEmpty(result);
-            result = gitHubController.RetrieveUsersJson(usernames, result);
-            Assert.NotNull(result);
-
-            if (!string.IsNullOrEmpty(result)) {
-                ApiUserResponse response = JsonConvert.DeserializeObject<ApiUserResponse>(result);
-                Assert.NotNull(response);
-                Assert.Empty(response.Users);
-
-                Assert.Equal(2, response.Errors.Count);
-                Assert.Single(response.Errors.Where(e => e.Message.Equals("Username is not in valid alphanumeric and hypen format.")).ToList());
-                Assert.Single(response.Errors.Where(e => e.Message.Equals("User not found.")).ToList());
-            }
+            OkObjectResult okObjectResult = Assert.IsType<OkObjectResult>(result);
+            Assert.Equal("Token is Valid and request authorized.", okObjectResult.Value);
         }
     }
 }
