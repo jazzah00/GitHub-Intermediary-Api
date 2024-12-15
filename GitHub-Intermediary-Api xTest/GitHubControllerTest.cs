@@ -4,7 +4,6 @@ using GitHub_Intermediary_Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Newtonsoft.Json;
-using System.Xml.Serialization;
 
 namespace GitHub_Intermediary_Api_xTest {
     public class GitHubControllerTest {
